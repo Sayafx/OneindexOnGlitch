@@ -1,8 +1,33 @@
 
-<h1 align="center"><a href="https://github.com/SomeBottle/OneIndex" target="_blank">OneIndex</a></h1>
 
-> Oneindex Bottle Edition.<br>
-> (๑•̀ㅂ•́)و✧  Original Program by [Donwa](https://github.com/donwa/oneindex). 
+# [OneIndex](https://github.com/SomeBottle/OneIndex) On [Glitch](https://glitch.com/)
+
+
+
+---
+
+## [Glitch](https://glitch.com/)官网
+
+注册账号，右上角`New Project`，选择`Import From Github`，复制`https://github.com/Sayafx/OneindexOnGlitch.git`，粘贴入输入栏导入项目。
+
+进入项目，点击底部`Preview`，`Preview in a new window`查看效果
+
+
+
+项目页面左上角`Settings`，`Edit Project Details`，可以更改`PROJECT NAME`，域名会响应改变。
+
+
+
+---
+
+# 原readme
+
+
+
+
+
+Oneindex Bottle Edition.<br>
+(๑•̀ㅂ•́)و✧  Original Program by [Donwa](https://github.com/donwa/oneindex). 
 
 <p align="center">
 <img alt="star" src="https://img.shields.io/github/stars/SomeBottle/OneIndex.svg"/>
@@ -24,18 +49,18 @@ https://github.com/SomeBottle/OdIndex
 ## 修改内容  
 1. 密码md5密文保存  
 2. 自动判断HTTP 429请求过多的错误，并自动限制刷新的时间间隔，自动调整刷新周期.(如果没有到周期会返回提示)↓
-  
+
   ![](https://ww2.sinaimg.cn/large/ed039e1fgy1g1dncyfprgj20iw0acwee)  
-  
+
   ![](https://ww2.sinaimg.cn/large/ed039e1fgy1g1dnd9mrelj20dq02bt8l)  
-  
+
   详细配置可以自行去 `/config/refreshfix.php` 进行修改，`refreshinterval` 是刷新允许周期，`maxretrytime` 是自动调整周期前允许重试的次数.  
-  
+
 3. 防止request失败导致的空文件目录.(（づ￣3￣）づ拒绝首页空白)   
 4. 增加**简单的**状态码&出错日志(在 `/lib` 目录下生成).( `requestcode.txt` & `requestlog.php`)  
 5. 在**nexmoe主题**增加了一次性缩略图的加载限制，最多预览五十张（防止请求过多被限制）  
 6. 增加缓存刷新结果，如果刷新失败，后台会显示**重建缓存失败**，CLI模式在 `one.php` 执行刷新时如果失败会返回**Failed**  
-  ![Example](https://ww2.sinaimg.cn/large/ed039e1fgy1g15sddvme4j20bg0650sh)  
+    ![Example](https://ww2.sinaimg.cn/large/ed039e1fgy1g15sddvme4j20bg0650sh)  
 7. 文件缓存过期**引用时**自动刷新   
 
 ## 店长推荐（误  
@@ -56,7 +81,7 @@ https://github.com/SomeBottle/OdIndex
 - 缓存类型推荐为 `filecache`
 - 缓存过期时间推荐为 `86400` (秒)
 - 自动调整周期前允许重试的次数(`/config/refreshfix.php`中的`maxretrytime`)推荐为  `8`  
- 
+
 ## Nginx伪静态规则配置： 
 ```
  if (!-f $request_filename){  
